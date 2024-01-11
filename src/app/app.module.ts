@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ApplyComponent } from './apply/apply.component';
 import { RouterModule } from '@angular/router';
 import { ServiceComponent } from './service/service.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ServiceComponent } from './service/service.component';
     AppComponent,
     HomeComponent,
     ApplyComponent,
-      ServiceComponent
+      ServiceComponent,
+      BlogComponent
    ],
   imports: [
     BrowserModule,
