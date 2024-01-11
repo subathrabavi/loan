@@ -1,0 +1,45 @@
+#para{
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #000a2d;
+    line-height: 1.2;
+    display: block;
+    font-family: serif;
+}
+#btn{
+    transition: background-color 0.3s ease;
+    border: none;
+}
+#btn:hover{
+    background-color: dodgerblue;
+}
+.container-fluid{
+    background-image: url(/assets/hero2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 560px;
+
+}
+/* Add this to your styles.scss or styles.css */
+
+.icon {
+    font-size: 70px; /* Set the icon size to 100px */
+}
+
+.icon-container {
+    text-align: center; /* Center the content inside the container */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.icon-container p {
+    margin-top: 10px; /* Add some top margin to the paragraph for spacing */
+}
+ .nav-item {
+    border-bottom: 2px solid #f8fbf9; /* Change the color as needed */
+}
+.nav-item:hover{
+    border-color: dodgerblue;
+    color: #fff;
+    transition: color .3s ease-in-out
+}
