@@ -8,6 +8,7 @@ import { ApplyComponent } from './apply/apply.component';
 import { RouterModule } from '@angular/router';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     ApplyComponent,
       ServiceComponent,
-      AboutComponent
+      AboutComponent,
+      ContactComponent
    ],
   imports: [
     BrowserModule,
