@@ -14,13 +14,13 @@
 #btn:hover{
     background-color: dodgerblue;
 }
-.container-fluid{
+#con{
     background-image: url(/assets/hero2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 560px;
 
-}
+} 
 /* Add this to your styles.scss or styles.css */
 
 .icon {
@@ -48,3 +48,56 @@ a{
 li{
     list-style-type: none;
 }
+
+/* service */
+
+i{
+    color: dodgerblue;
+    font-size: 50px;
+    
+    }
+    .bottom-border {
+        border-bottom: 2px solid rgb(251, 252, 253); 
+        padding-bottom: 10px; 
+        margin-bottom: 10px; 
+        
+      }
+      .bottom-border:hover{
+        border-color: rgb(43, 29, 243);
+      }
+    
+      .content {
+        position:absolute;
+        display: block;
+        top: 200px;
+        left: 45%;
+      }
+      
+      /* .services-area .single-cat::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0px;
+        background: #c7ddf9;
+        height: 3px;
+        width: 100%;
+    }
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+      */
+      
+      a:hover{
+      
+      
+        color: blue;
+        border-bottom:solid blue;
+    }
+    a{
+        text-decoration: none;
+        /* color: white; */
+    }
+    li{
+        list-style-type: none;
+    }
+    
