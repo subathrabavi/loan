@@ -4,13 +4,17 @@ import { HomeComponent } from './home/home.component';
 import { ApplyComponent } from './apply/apply.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},
   {path:"apply",component:ApplyComponent},
   { path: "", redirectTo: "/home", pathMatch: "full" },
   {path:"service",component:ServiceComponent},
-  {path:'about',component:AboutComponent}
+  {path:'about',component:AboutComponent},
+  {path:'blog',component:BlogComponent},
+
+
 
 ];
 

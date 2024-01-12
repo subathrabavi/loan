@@ -7,11 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ApplyComponent } from './apply/apply.component';
 import { RouterModule } from '@angular/router';
 import { ServiceComponent } from './service/service.component';
-<<<<<<< HEAD
-import { BlogComponent } from './blog/blog.component';
-=======
 import { AboutComponent } from './about/about.component';
->>>>>>> 0aa52d2e8679c6e4a79e1836b98a908291384ce9
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -20,11 +17,7 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     ApplyComponent,
       ServiceComponent,
-<<<<<<< HEAD
-      BlogComponent
-=======
-      AboutComponent
->>>>>>> 0aa52d2e8679c6e4a79e1836b98a908291384ce9
+      AboutComponent,BlogComponent
    ],
   imports: [
     BrowserModule,
