@@ -5,6 +5,7 @@ import { ApplyComponent } from './apply/apply.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path:"home",component:HomeComponent},

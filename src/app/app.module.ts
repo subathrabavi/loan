@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     ApplyComponent,
       ServiceComponent,
-      AboutComponent,BlogComponent
+      AboutComponent,BlogComponent,
+     
+      ContactComponent
    ],
   imports: [
     BrowserModule,

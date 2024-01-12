@@ -49,5 +49,17 @@
   }
     */
     
-  
+    a:hover{
+    
+    
+      color: blue;
+      border-bottom:solid blue;
+  }
+  a{
+      text-decoration: none;
+      /* color: white; */
+  }
+  li{
+      list-style-type: none;
+  }
   
