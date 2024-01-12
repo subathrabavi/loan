@@ -14,6 +14,8 @@ const routes: Routes = [
   {path:"service",component:ServiceComponent},
   {path:'about',component:AboutComponent},
   {path:'blog',component:BlogComponent},
+  {path:'contact',component:ContactComponent},
+
 
 
 
