@@ -1,4 +1,4 @@
-.container {
+/* .container {
     position: relative;
     
   }
@@ -6,10 +6,85 @@
 .container .content {
     position: absolute;
     bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(18, 18, 50, 0.9); /* Black background with 0.5 opacity */
+    background: rgb(0, 0, 0);
+    background: rgba(18, 18, 50, 0.9);
     color: #f1f1f1;
     width: 1350px;
     height:400px;
     padding: 20px;
   }
+  .image-container {
+    position: relative;
+}
+
+.date-overlay {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  background-color: blue;width: 100px;height: 100px;
+  color: white; 
+  transition: color 0.3s; 
+
+.date-overlay:hover {
+  color: blue;
+  background-color: transparent; 
+}
+.link:hover{
+  color: blue;
+}
+.text-secondary.hover-effect:hover {
+  color: blue;
+  opacity: 1;
+  
+}
+
+
+
+
+ */
+ .container {
+  position: relative;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(18, 18, 50, 0.9);
+  color: #f1f1f1;
+  width: 1490px;
+  height: 400px;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.date-overlay {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.date-overlay:hover {
+  color: blue;
+  background-color: transparent;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.text-secondary.hover-effect:hover {
+  color: blue;
+  opacity: 1;
+}
+.link:hover{
+color: blue;
+}
