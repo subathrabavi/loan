@@ -1,51 +1,57 @@
 <app-navbar></app-navbar>
  <h1 style="text-align: center; padding: 30px;">Loan application Form</h1>
+ <form action="" [formGroup]="loan">
 <div class="container">
     <div class="row">
         <div class="col-md-6">
             <label for=""> Desired Loan Amount</label>
-            <input type="text" name="loan" id="">
+            <input type="text" name="loan"  formControlName="loan" id="">
         </div>
+
+
+
         <div class="col-md-6">
             <label for="">Annual Income</label>
-            <input type="text" name="lastname" id="">
+            <input type="text" name="lastname" formControlName="lastname" id="">
         </div>
+
+
         <label for="use">Loan Will Be Use For</label><br>
         <div class="col-md-6">
             
-            <input type="radio" name="use" id="business" value="business">Business Launching<br>
-            <input type="radio" name="use" id="home" value="home">Home Improvement<br>
-            <input type="radio" name="use" id="education" value="education">Education<br>
+            <input type="radio" name="useage" id="business" value="business" formControlName="useage">Business Launching<br>
+            <input type="radio" name="useage" id="home" value="home" formControlName="useage">Home Improvement<br>
+            <input type="radio" name="useage" id="education" value="education" formControlName="useage">Education<br>
 
         </div>
         <div class="col-md-6">
             
-            <input type="radio" name="use" id="house" value="house">House Buying<br>
-            <input type="radio" name="use" id="investment" value="investment">Investment<br>
-            <input type="radio" name="use" id="others" value="others">Others<br><br>
+            <input type="radio" name="useage" id="house" value="house" formControlName="useage">House Buying<br>
+            <input type="radio" name="useage" id="investment" value="investment" formControlName="useage">Investment<br>
+            <input type="radio" name="useage" id="others" value="others" formControlName="useage">Others<br><br>
         </div>
         <h4>Contact Information</h4>
         <label for="">Name</label>
         <div class="col-md-4">
 
-            <input type="text" name="fname"><br>
+            <input type="text" name="firstname" formControlName="firstname"><br>
             <label for="">FirstName</label>
         </div>
         <div class="col-md-4">
 
-            <input type="text" name="mname"><br>
+            <input type="text" name="middlename" formControlName="middlename"><br>
             <label for="">MiddleName</label>
         </div>
         <div class="col-md-4">
 
-            <input type="text" name="lname"><br>
+            <input type="text" name="lastname" formControlName="lastname"><br>
             <label for="">LastName</label>
         </div>
         
         <h4>Birth Date</h4>
         <div class="col-md-4">
 
-            <select name="date" id="date">
+            <select name="date" formControlName="date" id="date">
                 <option value="">Select the birth Date</option>
                 <option value="">1</option>
                 <option value="">2</option>
@@ -83,7 +89,7 @@
         </div>
         <div class="col-md-4">
 
-            <select name="month" id="month">
+            <select name="month" formControlName="month" id="month">
                 <option value="">Select the month</option>
                 <option value="">January</option>
                 <option value="">February</option>
@@ -103,7 +109,7 @@
         </div>
         <div class="col-md-4">
 
-            <select name="year" id="year">
+            <select name="year" formControlName="year" id="year">
                 <option value="">Select the Year</option>
                 <option value=""></option>
                 <option value="">2006</option>
@@ -159,112 +165,112 @@
         </div>
         <h4>Marrital status</h4>
         <div class="col-md-4">
-            <input type="radio" name="marrital" id="married" value="married">Married<br>
+            <input type="radio" name="marrital" formControlName="marrital" id="married" value="married">Married<br>
 
         </div>
         <div class="col-md-4">
-            <input type="radio" name="marrital" id="single" value="single">Single<br>
+            <input type="radio" name="marrital" formControlName="marrital" id="single" value="single">Single<br>
         </div>
         <div class="col-md-4">
-            <input type="radio" name="marrital" id="others" value="others">Others<br>
+            <input type="radio" name="marrital" formControlName="marrital" id="others" value="others">Others<br>
 
         </div>
         <div class="col-md-6">
             <h4>Email</h4><br>
-            <input type="email"><br>
+            <input type="email" name="email" formControlName="email"><br>
             <label for="">example example.com</label>
 
         </div>
         <div class="col-md-6">
             <h4>Phone</h4><br>
-            <input type="number"><br><br>
+            <input type="number" name="phone" formControlName="phone"><br><br>
 
         </div>
         <h4>Address</h4>
         <div class="col-md-12">
-            <input type="text" name="" id=""><br>
+            <input type="text" name="street" formControlName="street" id=""><br>
             <label>Street address </label>
 
         </div>
         <div class="col-md-12">
-            <input type="text" name="" id=""><br>
+            <input type="text" name="address" formControlName="address" id=""><br>
             <label>Street address line2</label>
         </div>
         <div class="col-md-6">
-            <input type="text" name="" id=""><br>
+            <input type="text" name="city" formControlName="city" id=""><br>
             <label>City</label>
         </div>
         <div class="col-md-6">
-            <input type="text" name="" id=""><br>
+            <input type="text" name="state" formControlName="state" id=""><br>
             <label>State</label>
         </div>
         <div class="col-md-12">
-            <input type="number" name="" id=""><br>
+            <input type="number" name="pin" formControlName="pin" id=""><br>
             <label>Postal zip Code</label>
         </div>
         <h3>How Long You lived in given address</h3>
 
         <div class="col-md-6">
-            <input type="radio" name="live" id="0-1" value="0-1">0-1 Year<br>
+            <input type="radio" name="live" formControlName="live" id="0-1" value="0-1">0-1 Year<br>
 
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="1-2" value="1-2">1-2 Year<br>
+            <input type="radio" name="live" formControlName="live" id="1-2" value="1-2">1-2 Year<br>
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="3-4" value="3-4">3-4 Year<br>
+            <input type="radio" name="live" formControlName="live" id="3-4" value="3-4">3-4 Year<br>
 
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="5" value="5">5 + Year<br>
+            <input type="radio" name="live" formControlName="live" id="5" value="5">5 + Year<br>
 
         </div>
         <h2>Employement Information</h2>
         <label for="">Name</label>
         <div class="col-md-4">
 
-            <input type="text" name="fname"><br>
+            <input type="text" name="fname" formControlName="fname"><br>
             <label for="">FirstName</label>
         </div>
         <div class="col-md-4">
 
-            <input type="text" name="lname"><br>
+            <input type="text" name="lname" formControlName="lname"><br>
             <label for="">LastName</label>
         </div>
         <div class="col-md-4">
 
-            <input type="text" name="occupation"><br>
+            <input type="text" name="occupation" formControlName="occupation"><br>
             <label for="">Occupation</label>
         </div>
         <h3>Working Experience</h3>
 
         <div class="col-md-6">
-            <input type="radio" name="live" id="0-1" value="0-1">0-1 Year<br>
+            <input type="radio" name="experience" formControlName="experience" id="0-1" value="0-1">0-1 Year<br>
 
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="1-2" value="1-2">1-2 Year<br>
+            <input type="radio" name="experience" formControlName="experience" id="1-2" value="1-2">1-2 Year<br>
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="3-4" value="3-4">3-4 Year<br>
+            <input type="radio" name="experience" formControlName="experience" id="3-4" value="3-4">3-4 Year<br>
 
         </div>
         <div class="col-md-6">
-            <input type="radio" name="live" id="5" value="5">5 + Year<br>
+            <input type="radio" name="experience" formControlName="experience" id="5" value="5">5 + Year<br>
 
         </div>
 
         <div class="col-md-6">
             <label for="">Monthly Income</label>
-            <input type="text" name="income" id="">
+            <input type="text" name="monthlyincome" formControlName="monthlyincome" id="">
         </div>
         <div class="col-md-6">
             <label for="">Monthly Expenses</label>
-            <input type="text" name="income" id="">
+            <input type="text" name="monthlyexpense" formControlName="monthlyexpense" id="">
         </div>
         <div class="col-md-6">
             <label for="">Down Payment</label>
-            <input type="text" name="" id="">
+            <input type="text" name="downpayment" formControlName="downpayment" id="">
 
         </div>
         <div class="col-md-6">
@@ -273,38 +279,38 @@
         </div>
         <div class="col-md-12">
             <label for="">Comments</label>
-            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+            <textarea name="comments" formControlName="comments" id="" cols="30" rows="10"></textarea>
 
         </div>
         <h3>Bank refrences</h3>
         <div class="col-md-4">
             <label for="">Bank name</label>
-            <input type="text">
+            <input type="text" name="bankname" formControlName="bankname">
 
         </div>
         <div class="col-md-4">
             <label for="">Branch Name</label>
-            <input type="text">
+            <input type="text" name="branchname" formControlName="branchname">
 
         </div>
         <div class="col-md-4">
             <label for="">Account Number</label>
-            <input type="text">
+            <input type="text" name="acnumber" formControlName="acnumber">
 
         </div>
         <div class="col-md-4">
             <label for="">Ifsc Code</label>
-            <input type="text">
+            <input type="text" name="ifsc" formControlName="ifsc">
 
         </div>
         <div class="col-md-4">
             <label for="">Account Holder name</label>
-            <input type="text">
+            <input type="text" name="acname" formControlName="acname">
 
         </div>
         <div class="col-md-4">
             <label for="">Mobile Number</label>
-            <input type="text">
+            <input type="text" name="mobile" formControlName="mobile">
 
         </div>
         <div class="col-md-12">
@@ -316,17 +322,18 @@
                 any other relationships we may establish from time to time. Any personal and credit information obtained
                 may be disclosed from time to time to other lenders, credit bureaus or other credit reporting agencies.
             </p>
-            <input type="checkbox">Yes
+            <input type="checkbox" name="consent" formControlName="consent">Yes
         </div>
         <div class="col-md-12">
             <p>I hereby agree that the information given is true, accurate and complete as of the date of this application submission.
             </p>
-            <input type="checkbox">Yes
+            <input type="checkbox" name="declaration" formControlName="declaration">Yes
         </div>
         <div class="col-md-12 btn btn-success">
-            Send Application Now
-        <div>
-
+          <button (click)="posts()">  Send Application Now </button>
+        
+</div>
     </div>
 </div>
+ </form>
 <app-footer></app-footer>

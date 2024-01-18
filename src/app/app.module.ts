@@ -12,6 +12,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],
