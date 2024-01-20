@@ -15,40 +15,40 @@ constructor(private ser:LoanService){}
 
 loan= new FormGroup(
   {
-  loan:new FormControl(),
-income:new FormControl(),
-useage :new FormControl(),
-firstname :new FormControl(),
-middlename :new FormControl(),
-lastname :new FormControl(),
-date:new FormControl(),
-month:new FormControl(),
-year:new FormControl(),
-marrital :new FormControl(),
-email :new FormControl(),
-phone:new FormControl(),
-street :new FormControl(),
-address :new FormControl(),
-city :new FormControl(),
-state :new FormControl(),
-pin:new FormControl(),
-live :new FormControl(),
-fname :new FormControl(),
-lname :new FormControl(),
-occupation :new FormControl(),
-experience:new FormControl(),
-monthlyincome:new FormControl(),
-monthlyexpense:new FormControl(),
-downpayment:new FormControl(),
-comments :new FormControl(),
-bankname :new FormControl(),
-branchname :new FormControl(),
-acnumber:new FormControl(),
-ifsc :new FormControl(),
-acname :new FormControl(),
-mobile:new FormControl(),
-consent :new FormControl(),
-declaration :new FormControl(),
+loan:new FormControl('',[Validators.required]),
+income:new FormControl('',[Validators.required]),
+useage :new FormControl('',[Validators.required]),
+firstname :new FormControl('',[Validators.required]),
+middlename :new FormControl('',[Validators.required]),
+lastname :new FormControl('',[Validators.required]),
+date:new FormControl('',[Validators.required]),
+month:new FormControl('',[Validators.required]),
+year:new FormControl('',[Validators.required]),
+marrital :new FormControl('',[Validators.required]),
+email :new FormControl('',[Validators.required]),
+phone:new FormControl('',[Validators.required]),
+street :new FormControl('',[Validators.required]),
+address :new FormControl('',[Validators.required]),
+city :new FormControl('',[Validators.required]),
+state :new FormControl('',[Validators.required]),
+pin:new FormControl('',[Validators.required]),
+live :new FormControl('',[Validators.required]),
+fname :new FormControl('',[Validators.required]),
+lname :new FormControl('',[Validators.required]),
+occupation :new FormControl('',[Validators.required]),
+experience:new FormControl('',[Validators.required]),
+monthlyincome:new FormControl('',[Validators.required]),
+monthlyexpense:new FormControl('',[Validators.required]),
+downpayment:new FormControl('',[Validators.required]),
+comments :new FormControl('',[Validators.required]),
+bankname :new FormControl('',[Validators.required]),
+branchname :new FormControl('',[Validators.required]),
+acnumber:new FormControl('',[Validators.required]),
+ifsc :new FormControl('',[Validators.required]),
+acname :new FormControl('',[Validators.required]),
+mobile:new FormControl('',[Validators.required]),
+consent :new FormControl('',[Validators.required]),
+declaration :new FormControl('',[Validators.required]),
   }
 );
 
@@ -56,9 +56,13 @@ declaration :new FormControl(),
 
 
 posts(){
-  const aa=this.loan.value as Loan;
+  const aa=this.loan.value as unknown as Loan;
   this.ser.post(aa).subscribe((res)=>{
     console.log(res);
+    alert("Form Submitted Successfully")
+    this.loan.reset();
+  
+    
   })
 }
 
