@@ -11,3 +11,18 @@ a{
 li{
     list-style-type: none;
 }
+.hero-section {
+    background-image: url('/assets/images service/hero2.jpg');
+    height: 380px; /* Adjust the height as needed */
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .hero-text {
+    color: rgb(5, 1, 1);
+  }
+  .h{
+    float: left;
+    padding-right: 5px;
+  }
