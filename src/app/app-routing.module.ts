@@ -8,11 +8,11 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+ 
   {path:"apply",component:ApplyComponent},
-  { path: "", component:HomeComponent },
+  {path: "", component:HomeComponent },
   {path:"service",component:ServiceComponent},
-  {path:'about',component:AboutComponent},
+  {path:"about",component:AboutComponent},
   {path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
 
