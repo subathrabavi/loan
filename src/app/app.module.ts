@@ -13,7 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { BlogdetailComponent } from './blogdetail/blogdetail.component'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http'
       
       ContactComponent,
       NavbarComponent,
-      FooterComponent
+      FooterComponent,
+      BlogdetailComponent
    ],
   imports: [
     BrowserModule,
