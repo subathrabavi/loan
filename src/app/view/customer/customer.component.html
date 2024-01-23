@@ -1,1 +1,77 @@
-<p>customer works!</p>
+<div class="container-fluid">
+    
+        <button type="button" class="btn btn-primary mt-5" (click)="gotoNew()">Add New</button>
+
+        <div class="mt-5">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S.No</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Prefix</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Month</th>
+                    <th scope="col">Day</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">FatherName</th>
+                    <th scope="col">MobileNumber</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Street</th>
+                    <th scope="col">StreetLine2</th>
+                    <th scope="col">City</th>
+                    <th scope="col">State</th>
+                    <th scope="col">PinCode</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">EducationLevel</th>
+                    <th scope="col">Identification</th>
+                    <th scope="col">ID Image</th>
+                    <th scope="col">Ac/Type</th>
+                    <th scope="col">Ac/Category</th>
+                    <th scope="col">MonthlySalary</th>
+                    <th scope="col">Option</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let a of ac;let i=index;">
+                    <td>{{i+1}}</td>
+                    <td>{{a.id}}</td>
+                    <td>{{a.prefix}}</td>
+                    <td>{{a.firstname}}</td>
+                    <td>{{a.lastname}}</td>
+                    <td>{{a.month}}</td>
+                    <td>{{a.day}}</td>
+                    <td>{{a.year}}</td>
+                    <td>{{a.mothersmaidenName}}</td>
+                    <td>{{a.telephoneNumber}}</td>
+                    <td>{{a.email}}</td>
+                    <td>{{a.streetAddress}}</td>
+                    <td>{{a.streetAddressLine2}}</td>
+                    <td>{{a.city}}</td>
+                    <td>{{a.state}}</td>
+                    <td>{{a.pincode}}</td>
+                    <td>{{a.country}}</td>
+                    <td>{{a.educationLevel}}</td>
+                    <td>{{a.formofIdentification}}</td>
+                    <td><img src="{{a.uploadId}}" alt="" height="100px" width="100px" class="img-fluid"></td>
+                    <td>{{a.accountType}}</td>
+                    <td>{{a.accountCategory}}</td>
+                    <td>{{a.monthlySalary}}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary" (click)="gotoView(a.id)">View</button>
+                        <button type="button" class="btn btn-danger" (click)="gotoDelete(a.id)">Delete</button>
+                        
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+              <button type="button" class="btn btn-danger" (click)="gotoCust()">Back</button>
+        </div>
+    
+    
+    
+
+</div>
+

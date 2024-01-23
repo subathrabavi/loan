@@ -3,11 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewhomeComponent } from './viewhome/viewhome.component';
 import { StaffComponent } from './staff/staff.component';
 import { CustomerComponent } from './customer/customer.component';
+import { AddnewComponent } from './addnew/addnew.component';
+import { ShowdetailsComponent } from '../showdetails/showdetails.component';
+import { DeleteComponent } from '../delete/delete.component';
 
 const routes: Routes = [
   {path:"",component:ViewhomeComponent},
   {path:"staff",component:StaffComponent},
-  {path:"customer",component:CustomerComponent}
+  {path:"customer",component:CustomerComponent},
+  {path:"addNew",component:AddnewComponent},
+  {path:"show/:id",component:ShowdetailsComponent},
+  {path:"delete/:id",component:DeleteComponent}
 ];
 
 @NgModule({
