@@ -6,7 +6,6 @@ import { CustomerComponent } from './customer/customer.component';
 import { AddnewComponent } from './addnew/addnew.component';
 import { ShowdetailsComponent } from '../showdetails/showdetails.component';
 import { DeleteComponent } from '../delete/delete.component';
-import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
   {path:"",component:ViewhomeComponent},
@@ -15,7 +14,7 @@ const routes: Routes = [
   {path:"addNew",component:AddnewComponent},
   {path:"show/:id",component:ShowdetailsComponent},
   {path:"delete/:id",component:DeleteComponent},
-  {path:"/signin",component:SigninComponent}
+
 ];
 
 @NgModule({
