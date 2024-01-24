@@ -12,9 +12,12 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { BlogdetailComponent } from './blogdetail/blogdetail.component'
+import { BlogdetailComponent } from './blogdetail/blogdetail.component';
+import { ShowdetailsComponent } from './showdetails/showdetails.component';
+import { DeleteComponent } from './delete/delete.component';
+
 
 
 @NgModule({
@@ -30,14 +33,19 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component'
       ContactComponent,
       NavbarComponent,
       FooterComponent,
-      BlogdetailComponent
+      BlogdetailComponent,
+      ShowdetailsComponent,
+      DeleteComponent,
+      
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

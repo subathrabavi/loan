@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoanService } from '../loan.service';
 import { Loan } from '../loan';
 
@@ -51,6 +51,8 @@ consent :new FormControl(),
 declaration :new FormControl(),
   }
 );
+
+
 
 
 posts(){
