@@ -20,9 +20,9 @@ post(loan:Loan):Observable<Loan>{
 }
 
 sign(sign:Signup):Observable<Signup>{
-  return this.http.post<Signup>(this.baseurl+'save',sign)
+  return this.http.post<Signup>(this.baseurl+'sign',sign)
 }
 login(login:Login):Observable<Login>{
-  return this.http.post<Login>(this.baseurl+'login',login)
+  return this.http.post<Login>(this.baseurl+'log',login)
 }
 }
