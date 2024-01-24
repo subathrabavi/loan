@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Loan } from './loan';
 import { Observable } from 'rxjs';
+import { Signup } from './signup';
+import { Login } from './login';
 
 @Injectable({
   providedIn: 'root'
@@ -17,4 +19,10 @@ post(loan:Loan):Observable<Loan>{
   return this.http.post<Loan>(this.baseurl+'postForm',loan)
 }
 
+sign(sign:Signup):Observable<Signup>{
+  return this.http.post<Signup>(this.baseurl+'save',sign)
+}
+login(login:Login):Observable<Login>{
+  return this.http.post<Login>(this.baseurl+'login',login)
+}
 }

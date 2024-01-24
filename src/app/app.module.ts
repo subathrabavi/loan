@@ -14,10 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { BlogdetailComponent } from './blogdetail/blogdetail.component';
-import { ShowdetailsComponent } from './showdetails/showdetails.component';
-import { DeleteComponent } from './delete/delete.component';
-
+import { BlogdetailComponent } from './blogdetail/blogdetail.component'
 
 
 @NgModule({
@@ -33,10 +30,7 @@ import { DeleteComponent } from './delete/delete.component';
       ContactComponent,
       NavbarComponent,
       FooterComponent,
-      BlogdetailComponent,
-      ShowdetailsComponent,
-      DeleteComponent,
-      
+      BlogdetailComponent
    ],
   imports: [
     BrowserModule,

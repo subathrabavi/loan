@@ -49,6 +49,7 @@ acname :new FormControl('',[Validators.required]),
 mobile:new FormControl('',[Validators.required]),
 consent :new FormControl('',[Validators.required]),
 declaration :new FormControl('',[Validators.required]),
+image:new FormControl()
   }
 );
 
