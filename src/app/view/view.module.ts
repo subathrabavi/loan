@@ -7,13 +7,14 @@ import { CustomerComponent } from './customer/customer.component';
 import { StaffComponent } from './staff/staff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddnewComponent } from './addnew/addnew.component';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
 
 
 @NgModule({
   declarations: [
     ViewhomeComponent,
     CustomerComponent,
-    StaffComponent,AddnewComponent
+    StaffComponent,AddnewComponent, LoandetailsComponent
   ],
   imports: [
     CommonModule,

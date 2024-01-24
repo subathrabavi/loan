@@ -19,6 +19,10 @@ post(loan:Loan):Observable<Loan>{
   return this.http.post<Loan>(this.baseurl+'postForm',loan)
 }
 
+getall():Observable<Loan[]>{
+  return this.http.get<Loan[]>(this.baseurl+'getAll')
+}
+
 sign(sign:Signup):Observable<Signup>{
   return this.http.post<Signup>(this.baseurl+'sign',sign)
 }
