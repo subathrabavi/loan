@@ -1,20 +1,11 @@
-<<<<<<< HEAD
- a:hover{
-=======
 a:hover{
->>>>>>> 05bf242 (lon)
     color: blue;
     border-bottom:solid blue;
     
 }
  a{
     text-decoration: none;
-<<<<<<< HEAD
-     /* color: white;  */
-} 
-=======
 }
->>>>>>> 05bf242 (lon)
 li{
     list-style-type: none;
 }
