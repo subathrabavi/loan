@@ -14,7 +14,6 @@ const routes: Routes = [
   {path:"addNew",component:AddnewComponent},
   {path:"show/:id",component:ShowdetailsComponent},
   {path:"delete/:id",component:DeleteComponent},
-
 ];
 
 @NgModule({
