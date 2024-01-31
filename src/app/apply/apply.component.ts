@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoanService } from '../loan.service';
 import { Loan } from '../loan';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-apply',
@@ -11,7 +12,7 @@ import { Loan } from '../loan';
 export class ApplyComponent {
 
 
-constructor(private ser:LoanService){}
+constructor(private ser:LoanService,private route:Router){}
 
 loan= new FormGroup(
   {
@@ -62,6 +63,7 @@ posts(){
     console.log(res);
     alert("Form Submitted Successfully")
     this.loan.reset();
+    // this.route.navigate(['view','loandetails'])
   
     
   })

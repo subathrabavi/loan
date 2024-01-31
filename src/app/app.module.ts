@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { BlogdetailComponent } from './blogdetail/blogdetail.component'
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component'
       ContactComponent,
       NavbarComponent,
       FooterComponent,
-      BlogdetailComponent
+      BlogdetailComponent,
+      LoginComponent
    ],
   imports: [
     BrowserModule,

@@ -1,0 +1,141 @@
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Id</th>
+        <th scope="col">Loan</th>
+        <th scope="col">Income</th>
+        <th scope="col">Useage</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">MiddleName</th>
+        <th scope="col">Date</th>
+        <th scope="col">Month</th>
+        <th scope="col">Year</th>
+        <th scope="col">Marrital</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Street</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Pin</th>
+
+        <th scope="col">FName</th>
+        <th scope="col">LName</th>
+        <th scope="col">Occupation</th>
+        <th scope="col">Exp</th>
+        <th scope="col">MonthlyIN</th>
+        <th scope="col">MonthlyExp</th>
+        <th scope="col">DownPayment</th>
+        <th scope="col">Comments</th>
+        <th scope="col">Bank</th>
+        <th scope="col">Branch</th>
+        <th scope="col">Ac/No</th>
+        <th scope="col">Ifsc</th>
+        <th scope="col">Ac/Name</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Consent</th>
+        <th scope="col">Declaration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let l of loans;let i=index;">
+        <td>{{i+1}}</td>
+        <td>{{l.id}}</td>
+        <td>{{l.loan}}</td>
+        <td>{{l.income}}</td>
+        <td>{{l.useage}}</td>
+        <td>{{l.firstname}}</td>
+        <td>{{l.middlename}}</td>
+        <td>{{l.lastname}}</td>
+        <td>{{l.date}}</td>
+        <td>{{l.month}}</td>
+        <td>{{l.year}}</td>
+        <td>{{l.marrital}}</td>
+        <td>{{l.email}}</td>
+        <td>{{l.phone}}</td>
+        <td>{{l.street}}</td>
+        <td>{{l.address}}</td>
+        <td>{{l.city}}</td>
+        <td>{{l.state}}</td>
+        <td>{{l.pin}}</td>
+       
+        <td>{{l.fname}}</td>
+        <td>{{l.lname}}</td>
+        <td>{{l.occupation}}</td>
+        <td>{{l.experience}}</td>
+        <td>{{l.monthlyincome}}</td>
+        <td>{{l.monthlyexpense}}</td>
+        <td>{{l.downpayment}}</td>
+        <td>{{l.comments}}</td>
+        <td>{{l.bankname}}</td>
+        <td>{{l.branchname}}</td>
+        <td>{{l.acnumber}}</td>
+        <td>{{l.ifsc}}</td>
+        <td>{{l.acname}}</td>
+        <td>{{l.mobile}}</td>
+        <td>{{l.consent}}</td>
+        <td>{{l.declaration}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <style>
+    .table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #212529;
+    }
+  
+    .table th,
+    .table td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+  
+    .table thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dee2e6;
+      background-color: #007bff;
+      color: #fff;
+    }
+  
+    .table tbody+tbody {
+      border-top: 2px solid #dee2e6;
+    }
+  
+    .table-sm th,
+    .table-sm td {
+      padding: 0.3rem;
+    }
+  
+    .table-bordered {
+      border: 1px solid #dee2e6;
+    }
+  
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6;
+    }
+  
+    .table-bordered thead th,
+    .table-bordered thead td {
+      border-bottom-width: 2px;
+    }
+  
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  
+    .table-hover tbody tr:hover {
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+  
+    /* Add more custom styling as needed */
+  </style>
+  
+
