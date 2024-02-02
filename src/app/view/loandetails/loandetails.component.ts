@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Loan } from 'src/app/loan';
 import { LoanService } from 'src/app/loan.service';
 
@@ -7,9 +8,11 @@ import { LoanService } from 'src/app/loan.service';
   templateUrl: './loandetails.component.html',
   styleUrls: ['./loandetails.component.css']
 })
+
+
 export class LoandetailsComponent implements OnInit {
   loans:Loan[];
-  constructor(private ser:LoanService){}
+  constructor(private ser:LoanService,private route:Router){}
   
   
   ngOnInit(): void {
@@ -21,5 +24,18 @@ export class LoandetailsComponent implements OnInit {
       this.loans=res;
     })
   }
+ apply(){
+  this.route.navigate(["/apply"])
+ }
 
+
+ acceptLoan(index: number) {
+  alert('Loan accepted!');
+  this.loans[index].status = 'accepted';
+}
+
+rejectLoan(index: number) {
+  alert('Loan rejected!');
+  this.loans[index].status = 'rejected';
+}
 }

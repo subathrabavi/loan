@@ -1,0 +1,62 @@
+
+<div>
+    <h2>Account Details</h2>
+    <label for="accountNumber">Enter Account Number:</label>
+    <input type="number" id="accountNumber" [(ngModel)]="accountNumber" />
+    <button (click)="getAccountDetails()">Get Details</button>
+  
+    <div *ngIf="accountDetails; ">
+
+  <!-- Deposit Section -->
+  <div>
+    <label for="depositAmount">Enter Deposit Amount:</label>
+    <input type="number" id="depositAmount" [(ngModel)]="depositAmount" />
+    <button (click)="deposit()">Deposit</button>
+  </div>
+
+  <!-- Withdraw Section -->
+  <div>
+    <label for="withdrawAmount">Enter Withdraw Amount:</label>
+    <input type="number" id="withdrawAmount" [(ngModel)]="withdrawAmount" />
+    <button (click)="withdraw()">Withdraw</button>
+  </div>
+
+      <h3>Details for Account Number {{ accountDetails.accountNumber }}</h3>
+      <p>Account Type: {{ accountDetails.accountType }}</p>
+      <p>Balance: {{ accountDetails.balance }}</p>
+
+
+    <p >ID : {{accountDetails.id}}</p>
+    <p>PREFIX : {{accountDetails.prefix}}</p>
+    <p>FIRSTNAME : {{accountDetails.firstname}}</p>
+    <p>LASTNAME : {{accountDetails.lastname}}</p>
+    <p>MONTH : {{accountDetails.month}}</p>
+    <p>DAY : {{accountDetails.day}}</p>
+    <p>YEAR : {{accountDetails.year}}</p>
+    <p>FATHER's NAME : {{accountDetails.mothersmaidenName}}</p>
+    <p>MOBILE : {{accountDetails.telephoneNumber}}</p>
+    <p>EMAIL : {{accountDetails.email}}</p>
+    <p>STREET : {{accountDetails.streetAddress}}</p>
+    <p>STREET ADDRESS LINE2 : {{accountDetails.streetAddressLine2}}</p>
+    <p>CITY : {{accountDetails.city}}</p>
+    <p>STATE : {{accountDetails.state}}</p>
+    <p>PINCODE : {{accountDetails.pincode}}</p>
+    <p>COUNTRY : {{accountDetails.country}}</p>
+    <p>EDUCATION LEVEL : {{accountDetails.educationLevel}}</p>
+    <p>FORM OF IDENTIFICATION : {{accountDetails.formofIdentification}}</p>
+    <p>IMAGE : <img src="{{accountDetails.uploadId}}" alt=""></p>
+    <p>AC/TYPE : {{accountDetails.accountType}}</p>
+    <P>AC/CATEGORY : {{accountDetails.accountCategory}}</P>
+    <P>MONTHLY SALARY : {{accountDetails.monthlySalary}}</P>
+    
+    </div>
+    <!-- <ng-template #notFound>
+        <div>
+          <h3>Account not found</h3>
+          <p>Please check the account number and try again.</p>
+        </div>
+      </ng-template> -->
+
+      
+  </div>
+  

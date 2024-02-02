@@ -38,6 +38,8 @@ export class AddnewComponent  {
     uploadId: new FormControl<string | null>(null, [Validators.required]),
     accountType:new FormControl(),
     accountCategory:new FormControl(),
+    accountNumber:new FormControl(),
+    balance:new FormControl(),
     monthlySalary:new FormControl(),
 
 

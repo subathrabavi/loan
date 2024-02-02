@@ -8,13 +8,17 @@ import { StaffComponent } from './staff/staff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddnewComponent } from './addnew/addnew.component';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { BranchComponent } from './branch/branch.component';
+import { CompanyComponent } from './company/company.component';
+import { ReportComponent } from './report/report.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 
 @NgModule({
   declarations: [
     ViewhomeComponent,
     CustomerComponent,
-    StaffComponent,AddnewComponent, LoandetailsComponent
+    StaffComponent,AddnewComponent, LoandetailsComponent, BranchComponent, CompanyComponent, ReportComponent, AccountDetailsComponent
   ],
   imports: [
     CommonModule,

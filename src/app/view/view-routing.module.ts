@@ -7,6 +7,10 @@ import { AddnewComponent } from './addnew/addnew.component';
 import { ShowdetailsComponent } from '../showdetails/showdetails.component';
 import { DeleteComponent } from '../delete/delete.component';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { BranchComponent } from './branch/branch.component';
+import { CompanyComponent } from './company/company.component';
+import { ReportComponent } from './report/report.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 const routes: Routes = [
   {path:"",component:ViewhomeComponent},
@@ -15,7 +19,11 @@ const routes: Routes = [
   {path:"addNew",component:AddnewComponent},
   {path:"show/:id",component:ShowdetailsComponent},
   {path:"delete/:id",component:DeleteComponent},
-  {path:"loandetails",component:LoandetailsComponent}
+  {path:"loandetails",component:LoandetailsComponent},
+  {path:"branch",component:BranchComponent},
+  {path:"company",component:CompanyComponent},
+  {path:"report",component:ReportComponent},
+  {path:"account",component:AccountDetailsComponent}
 ];
 
 @NgModule({

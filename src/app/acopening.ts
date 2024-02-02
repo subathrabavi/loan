@@ -21,5 +21,7 @@ export class Acopening {
     uploadId:string;
     accountType:string;
     accountCategory:string;
+    accountNumber:number;
+    balance:number;
     monthlySalary:number;
 }
