@@ -5,7 +5,12 @@
         <div class="row">
 
             <!-- *************** loan ************** -->
+            <div class="col-md-4">
+                <label for="fileInput">Attach Photo :</label>
+                <input type="file" id="fileInput" name="image" formControlName="image" (change)="onUpload($event)" required>
+            </div>
 
+            
             <div class="col-md-4">
                 <label for=""> Desired Loan Amount</label>
                 <input type="text" name="loan" formControlName="loan" id="" >
@@ -26,10 +31,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <label for="fileInput">Attach Photo :</label>
-                <input type="file" id="fileInput" name="image" formControlName="image">
-            </div>
+         
 
            
 

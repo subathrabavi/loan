@@ -1,10 +1,11 @@
 
-
-<table class="table">
+<button (click)="apply()" class="btn btn-success mt-5">New Form</button>
+<table class="table mt-5">
     <thead>
       <tr>
         <th scope="col">S.No</th>
         <th scope="col">Id</th>
+        <th scope="col">Photo</th>
         <th scope="col">Loan</th>
         <th scope="col">Income</th>
         <th scope="col">Useage</th>
@@ -22,7 +23,6 @@
         <th scope="col">City</th>
         <th scope="col">State</th>
         <th scope="col">Pin</th>
-
         <th scope="col">FName</th>
         <th scope="col">LName</th>
         <th scope="col">Occupation</th>
@@ -39,12 +39,14 @@
         <th scope="col">Mobile</th>
         <th scope="col">Consent</th>
         <th scope="col">Declaration</th>
+        <th scope="col">Actions</th> 
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let l of loans;let i=index;">
+      <tr *ngFor="let l of loans; let i = index" [style.backgroundColor]="l.status === 'accepted' ? '#c8e6c9' : l.status === 'rejected' ? '#ffcdd2' : ''">
         <td>{{i+1}}</td>
         <td>{{l.id}}</td>
+        <td><img src="{{l.image}}" alt="" height="100px" width="100px" class="img-fluid"></td>
         <td>{{l.loan}}</td>
         <td>{{l.income}}</td>
         <td>{{l.useage}}</td>
@@ -79,6 +81,10 @@
         <td>{{l.mobile}}</td>
         <td>{{l.consent}}</td>
         <td>{{l.declaration}}</td>
+        <td>
+          <button (click)="acceptLoan(i)" class="btn btn-success">Accept</button>
+          <button (click)="rejectLoan(i)" class="btn btn-danger">Reject</button>
+        </td>
       </tr>
       
     </tbody>

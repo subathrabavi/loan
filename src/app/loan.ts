@@ -2,6 +2,7 @@ export class Loan {
 
 
 id:number;
+image:string;
 loan:number;
 income:number;
 useage:string;
@@ -36,6 +37,9 @@ acname:string;
 mobile:number;
 consent:string;
 declaration:string;
+accepted: any;
+rejected: any;
+status: string;
 
 
 }

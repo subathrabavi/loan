@@ -1,0 +1,36 @@
+/* Apply styles to the table container */
+.container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Apply styles to the table header */
+  .table thead th {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff; /* White text */
+  }
+  
+  /* Apply styles to alternating rows in the table body */
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Bootstrap table background color */
+  }
+  
+  /* Apply styles to the first column (table header and table body) */
+  .table th,
+  .table td:first-child {
+    background-color: #dee2e6; /* Bootstrap table striped background color */
+  }
+  
+  /* Apply styles to the table cells */
+  .table th,
+  .table td {
+    text-align: center;
+  }
+  
+  /* Apply styles to the header */
+  h2 {
+    text-align: center;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 20px;
+  }
+  
