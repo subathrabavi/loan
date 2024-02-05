@@ -11,13 +11,11 @@ import { AcopeningService } from 'src/app/acopening.service';
 })
 export class AccountDetailsComponent {
   
-
   accountNumber: number;
   accountDetails: any;
   accountNotFound: boolean = false;
   depositAmount: number;
   withdrawAmount: number;
-
 
   constructor(private acOpeningService: AcopeningService) {}
 
@@ -60,5 +58,5 @@ export class AccountDetailsComponent {
         }
       );
   }
+  
 }
-

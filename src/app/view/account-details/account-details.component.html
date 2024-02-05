@@ -1,26 +1,26 @@
 
-<div>
-    <h2>Account Details</h2>
+<div class="customer-reports-container p-5">
+    <h2>Customer Reports</h2>
     <label for="accountNumber">Enter Account Number:</label>
     <input type="number" id="accountNumber" [(ngModel)]="accountNumber" />
-    <button (click)="getAccountDetails()">Get Details</button>
+    <button (click)="getAccountDetails()" class="btn btn-primary">Get Details</button>
   
-    <div *ngIf="accountDetails; ">
+    <div *ngIf="!accountNotFound; else notFound" class="customer-details">
 
   <!-- Deposit Section -->
   <div>
     <label for="depositAmount">Enter Deposit Amount:</label>
     <input type="number" id="depositAmount" [(ngModel)]="depositAmount" />
-    <button (click)="deposit()">Deposit</button>
+    <button (click)="deposit()" class="btn btn-success">Deposit</button>
   </div>
 
   <!-- Withdraw Section -->
   <div>
     <label for="withdrawAmount">Enter Withdraw Amount:</label>
     <input type="number" id="withdrawAmount" [(ngModel)]="withdrawAmount" />
-    <button (click)="withdraw()">Withdraw</button>
-  </div>
-
+    <button (click)="withdraw()" class="btn btn-danger">Withdraw</button>
+  </div >
+<div class="customer-details-section">
       <h3>Details for Account Number {{ accountDetails.accountNumber }}</h3>
       <p>Account Type: {{ accountDetails.accountType }}</p>
       <p>Balance: {{ accountDetails.balance }}</p>
@@ -44,18 +44,20 @@
     <p>COUNTRY : {{accountDetails.country}}</p>
     <p>EDUCATION LEVEL : {{accountDetails.educationLevel}}</p>
     <p>FORM OF IDENTIFICATION : {{accountDetails.formofIdentification}}</p>
-    <p>IMAGE : <img src="{{accountDetails.uploadId}}" alt=""></p>
+    <!-- <p>IMAGE : <img src="{{accountDetails.uploadId}}" alt=""></p> -->
     <p>AC/TYPE : {{accountDetails.accountType}}</p>
     <P>AC/CATEGORY : {{accountDetails.accountCategory}}</P>
     <P>MONTHLY SALARY : {{accountDetails.monthlySalary}}</P>
     
     </div>
-    <!-- <ng-template #notFound>
-        <div>
-          <h3>Account not found</h3>
-          <p>Please check the account number and try again.</p>
-        </div>
-      </ng-template> -->
+</div>
+
+<ng-template #notFound>
+    <div class="not-found-message">
+      <h3>Account not found</h3>
+      <p>Please check the account number and try again.</p>
+    </div>
+</ng-template>
 
       
   </div>

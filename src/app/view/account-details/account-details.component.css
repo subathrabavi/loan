@@ -1,0 +1,25 @@
+/* styles.css (or your preferred style file) */
+
+.customer-reports-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-section {
+    margin-bottom: 15px;
+}
+
+.customer-details-section {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.customer-details-section img {
+    max-width: 100%;
+    height: auto;
+}
