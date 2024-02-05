@@ -7,6 +7,7 @@ import { AddnewComponent } from './addnew/addnew.component';
 import { ShowdetailsComponent } from '../showdetails/showdetails.component';
 import { DeleteComponent } from '../delete/delete.component';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { AddstaffComponent } from './addstaff/addstaff.component';
 
 const routes: Routes = [
   {path:"",component:ViewhomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"addNew",component:AddnewComponent},
   {path:"show/:id",component:ShowdetailsComponent},
   {path:"delete/:id",component:DeleteComponent},
-  {path:"loandetails",component:LoandetailsComponent}
+  {path:"loandetails",component:LoandetailsComponent},
+  {path:"addstaff",component:AddstaffComponent}
 ];
 
 @NgModule({

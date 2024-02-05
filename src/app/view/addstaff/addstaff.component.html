@@ -1,0 +1,113 @@
+<div class="bg-success-subtle">
+    <h1 class="text-success" style="font-family: 'Abril Fatface';text-align: center; "> Personal Information Form</h1>
+    <p style="font-family: 'Abril Fatface'; font-size: 20px;">General Info</p>
+    <form [formGroup]="od" style="padding: left 50px; margin-left: 50px ;"  >
+        <div class="row text-success" style="padding-left: 200px;">
+        <div class="col col-md-6">
+        <p>FirstName:<span *ngIf="od.controls.firstname.invalid" style="color: red;"> *</span>
+        </p>
+        <input type="text" placeholder="EnterNo"   formControlName="firstname"><br>
+        
+        <p>LastName:<span *ngIf="od.controls.lastname.invalid" style="color: red;"> *</span>
+        </p>
+        <input type="text" placeholder="EnterNo"   formControlName="lastname"><br>
+        
+    
+    
+        <p>FatherName:<span *ngIf="od.controls.fathername.invalid" style="color: red;"> *</span></p>
+        <input type="text" placeholder="EnterNo"   formControlName="fathername"><br>
+        
+        
+        <p>MotherName:<span *ngIf="od.controls.mothername.invalid" style="color: red;"> *</span>
+        </p>
+        <input type="text" placeholder="EnterNo"   formControlName="mothername"><br>
+        
+
+        <p>Date of Birth:</p>
+        <input type="text" placeholder="EnterLocation"   formControlName="dob"><br>
+    
+        <p >Gender:<span *ngIf="od.controls.gender.invalid" style="color: red;">*</span><br></p>
+        <input type="radio" name="gender" value="Male"   formControlName="gender">Male
+        <input type="radio" name="gender" value="Female" formControlName="gender">Female
+<br>
+    
+        <p>bloodgroup:</p>
+        <input type="text" placeholder="EnterLocation"   formControlName="bloodgroup"><br>
+      
+        <p>Address:<span *ngIf="od.controls.pincodde.invalid" style="color: red;"> *</span>
+        </p>
+        <p>dno:</p>
+        <input type="number" placeholder="EnterLocation"   formControlName="dno"><br>
+    
+        <p>street:</p>
+        <input type="text" placeholder="EnterLocation"   formControlName="street"><br>
+    
+        <p>city:</p>
+        <input type="text" placeholder="EnterLocation"   formControlName="city"><br>
+      
+        <p>Pincode:</p>
+        <input type="number" placeholder="EnterNo"   formControlName="pincodde"><br>
+        
+        <p>Email:<span *ngIf="od.controls.email.invalid" style="color: red;"> *</span></p>
+        <input type="text" placeholder="EnterNo"   formControlName="email"><br>
+
+    </div>
+    <div class="col col-md-6">
+        <p>Contact:<span *ngIf="od.controls.contact.invalid" style="color: red;"> *</span></p>
+        <input type="number" placeholder="EnterNo"   formControlName="contact"><br>
+       
+        <p>Naminie:</p>
+        <input type="text" placeholder="EnterNo"   formControlName="naminie"><br>
+        
+        <p>Emergency Contact:</p>
+        <input type="number" placeholder="EnterNo"   formControlName="emergency_contact"><br>
+        
+        <p>Marital Status:</p>
+        <input type="text" placeholder="EnterNo"   formControlName="marital_status"><br>
+        
+        <p>Qualification:<span *ngIf="od.controls.pincodde.invalid" style="color: red;"> *</span></p>
+        <input type="text" placeholder="EnterNo"   formControlName="pincodde"><br>
+
+        
+        <p>Passedout:</p>
+        <input type="number" placeholder="EnterNo"   formControlName="passedout"><br>
+        
+        <p>Extraskils:</p>
+        <input type="text" placeholder="EnterNo"   formControlName="extraskils"><br>
+        
+        <p>JobRoll:<span *ngIf="od.controls.pincodde.invalid" style="color: red;"> *</span></p>
+        <input type="text" placeholder="EnterNo"   formControlName="job_roll"><br>
+        <span *ngIf="od.controls.pincodde.invalid" style="color: red;"> *</span><br >
+        
+        <p>Experiencce:<span *ngIf="od.controls.experiencce.invalid" style="color: red;"> *</span></p>
+        <input type="text" placeholder="EnterNo"   formControlName="experiencce"><br>
+        
+        <p>Signature:<span *ngIf="od.controls.signature.invalid" style="color: red;"> *</span></p><br >
+
+        <input type="text" placeholder="EnterNo"   formControlName="signature"><br>
+        
+        <p>Submitdate:</p>
+        <input type="number" placeholder="EnterNo"   formControlName="submitdate"><br>
+        
+       
+            <p>Upload Image</p>
+            
+              
+              <!-- <input class="form-control" type="file" id="formFile" name="image" (change)="onUpload($event)" required>
+              <label for="formFile" class="form-label text-muted">Upload Image</label>
+
+              <input type="text" formControlName="image"> -->
+              
+      <input class="form-control" type="file" id="formFile" name="image" (change)="onUpload($event)" required>
+      <label for="formFile" class="form-label text-muted">Upload Image</label>
+    
+        
+    </div>   
+</div> 
+    <div style="text-align: center;">
+        <button class="bg-success text-light" (submit)=" onSubmit()"  >Submit</button>
+        
+    
+    </div>
+    </form>
+</div>

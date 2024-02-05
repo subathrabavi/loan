@@ -1,56 +1,64 @@
-<div>
-    <nav class="navbar-nav bg-success-subtle d-flex justify-content-between">
+<div class="bg-success-subtle">
+    <nav class="navbar-nav  d-flex justify-content-between">
         <div>
             <h1 style="font-family:'Abril Fatface' ;">Loan.</h1>
         
             <a href="/login"> Login<i class="fa-solid fa-user"></i></a>
-        
+
+            
+       
         </div>
     </nav>
+    <div>
+
+    <button (click)="gotoAdd()" class="bg-success text-light">Add New</button>
+       
 
 <div >
-    <table  class="table table-success table-bordered" >
+    <table  class="table table-success table-bordered mt-5 pb-3" >
         <thead >
         <tr>
             <th>S.NO</th>
             <th>FirstName</th>
             <th>LastName</th>
-            <th>FatherName</th>
-            <th>Mothername</th>
             <th>DOB</th>
             <th>Gender</th>
-            <th>BloodGroup</th>
-            <th>DoorNo</th>
-            <th>Street</th>
             <th>City</th>
-            <th>Pincodde</th>
             <th>Email</th>
             <th>Contact</th>
-            <th>Naminie</th>
             <th>EmergencyContact</th>
-            <th>MaritalStatus</th>
-            <th>Qualification</th>
-            <th>Passedout</th>
-            <th>Extraskils</th>
             <th>JobRoll</th>
-            <th>experiencce</th>
-            <th>signature</th>
-            <th>submitdate</th>
-            <th>image</th>
+            <th>Image</th>
+            <th>Check</th>
         </tr>
     </thead>
-    <!-- <tbody>
+    <tbody>
         <tr *ngFor="let d of details, let x=index">
             <td>{{x+1}}</td>
-            <td>{{d.name}}</td>
-            <td>{{d.noofemployees}}</td>
-            <td>{{d.location}}</td>
-            <td>{{d.officetype}}</td>
-            <td></td>
+            <td>{{d.firstName}}</td>
+            <td>{{d.lastName}}</td>
+            <td>{{d.dob}}</td>
+            <td>{{d.gender}}</td>
+            <td>{{d.city}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.contact}}</td>
+            <td>{{d.emergency_contact}}</td>
+            <td>{{d.job_roll}}</td>
+            <td><img src="{{d.image}}" alt="" height="80px" width="80px" class="img-fluid"></td>
+            <td>
+<button>view</button>
+<button class= "ms-3"  (click)="deleteitem(d.id)">delete</button>
+            </td>
+
                
         </tr>
-    </tbody>   -->
+    </tbody>  
     </table>
     </div>
+
+    <div class=" pt-3 " style="padding-bottom: 500px;">
+        <button class="bg-dark text-light" (click)="gotoview()">Back</button>
+    </div>
+</div>
 </div>
 

@@ -8,17 +8,17 @@ import { StaffComponent } from './staff/staff.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddnewComponent } from './addnew/addnew.component';
 import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { AddstaffComponent } from './addstaff/addstaff.component';
+import { ViewstaffComponent } from './viewstaff/viewstaff.component';
+import { UpdatestaffComponent } from './updatestaff/updatestaff.component';
 
 
 @NgModule({
   declarations: [
     ViewhomeComponent,
     CustomerComponent,
-<<<<<<< HEAD
     StaffComponent,AddnewComponent, 
-=======
-    StaffComponent,AddnewComponent, LoandetailsComponent
->>>>>>> 0ebd3d62b84f24b328033c2150b440ac1e78345a
+    StaffComponent,AddnewComponent, LoandetailsComponent, AddstaffComponent, ViewstaffComponent, UpdatestaffComponent, 
   ],
   imports: [
     CommonModule,
