@@ -16,6 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { BlogdetailComponent } from './blogdetail/blogdetail.component'
 import { LoginComponent } from './login/login.component';
+import { CalcComponent } from './calc/calc.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { LoginComponent } from './login/login.component';
       NavbarComponent,
       FooterComponent,
       BlogdetailComponent,
-      LoginComponent
+      LoginComponent,
+      CalcComponent,
+      UserLoginComponent
    ],
   imports: [
     BrowserModule,

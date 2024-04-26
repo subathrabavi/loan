@@ -12,7 +12,7 @@ import { AcopeningService } from 'src/app/acopening.service';
 export class AccountDetailsComponent {
   
   accountNumber: number;
-  accountDetails: any;
+  accountDetails: Acopening=new Acopening();
   accountNotFound: boolean = false;
   depositAmount: number;
   withdrawAmount: number;
@@ -20,12 +20,16 @@ export class AccountDetailsComponent {
   constructor(private acOpeningService: AcopeningService) {}
 
   getAccountDetails() {
+    console.log('Account Number:', this.accountNumber);
     this.accountNotFound = false;
     this.acOpeningService.getAccountDetails(this.accountNumber)
       .subscribe(
         data => {
-          this.accountDetails = data;
+          console.log('Received data:', data);
+          this.accountDetails = data;                             
         },
+        
+        
         error => {
           console.error('Error fetching account details:', error);
           if (error.status === 404) {
@@ -36,6 +40,8 @@ export class AccountDetailsComponent {
       );
   }
   deposit() {
+    console.log(this.accountNumber, this.depositAmount);
+    
     this.acOpeningService.deposit(this.accountNumber, this.depositAmount)
       .subscribe(
         data => {

@@ -1,0 +1,13 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    display: block;
+    margin-top: 20px;
+  }

@@ -4,6 +4,8 @@ import { Loan } from './loan';
 import { Observable } from 'rxjs';
 import { Signup } from './signup';
 import { Login } from './login';
+import { UserSign } from './user-sign';
+import { Userlogin } from './userlogin';
 
 @Injectable({
   providedIn: 'root'
@@ -29,4 +31,12 @@ sign(sign:Signup):Observable<Signup>{
 login(login:Login):Observable<Login>{
   return this.http.post<Login>(this.baseurl+'log',login)
 }
+
+usersign(sign:UserSign):Observable<Signup>{
+  return this.http.post<Signup>(this.baseurl+'usersign',sign)
+}
+userlogin(login:Userlogin):Observable<Login>{
+  return this.http.post<Login>(this.baseurl+'userlog',login)
+}
+
 }

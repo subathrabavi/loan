@@ -28,14 +28,16 @@ export class AcopeningService {
     return this.http.delete<Acopening>(`${this.baseurl}delete/${id}`);
   }
   getAccountDetails(acNumber: number): Observable<any> {
-    return this.http.get(`${this.baseurl}getAccount/${acNumber}`);
+    return this.http.get<Acopening>(`${this.baseurl}getAccount/${acNumber}`);
   }
 
   deposit(acNumber: number, amount: number): Observable<any> {
-    return this.http.post(`${this.baseurl}deposit/${acNumber}/${amount}`, {});
+    const x={amount};
+    return this.http.post(`${this.baseurl}deposit/${acNumber}`,x );
   }
 
   withdraw(acNumber: number, amount: number): Observable<any> {
-    return this.http.post(`${this.baseurl}withdraw/${acNumber}/${amount}`, {});
+    const y={amount}
+    return this.http.post(`${this.baseurl}withdraw/${acNumber}`, y);
   }
 }
