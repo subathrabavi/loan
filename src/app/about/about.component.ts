@@ -17,4 +17,5 @@ export class AboutComponent implements OnInit {
   apply() {
     this.route.navigate(['apply'])
     }
+    
 }

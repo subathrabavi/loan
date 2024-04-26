@@ -1,18 +1,18 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Login } from '../login';
-import { HttpClient } from '@angular/common/http';
 import { LoanService } from '../loan.service';
+import { Userlogin } from '../userlogin';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-user-login',
+  templateUrl: './user-login.component.html',
+  styleUrls: ['./user-login.component.css']
 })
-export class LoginComponent {
-  public loginForm: FormGroup;
-  logins: Login = new Login();
+export class UserLoginComponent {
+  public userloginForm: FormGroup;
+  logins: Userlogin = new Userlogin();
 
   constructor(
     private formbuilder: FormBuilder,
@@ -22,7 +22,7 @@ export class LoginComponent {
   ) {}
 
   ngOnInit(): void {
-    this.loginForm = this.formbuilder.group({
+    this.userloginForm = this.formbuilder.group({
       name: ['', [Validators.required]],
       password: ['', [Validators.required]]
     });
@@ -32,17 +32,17 @@ export class LoginComponent {
   login(event: Event) {
     event.preventDefault(); // Prevent default form submission
 
-    if (this.loginForm.valid) {
+    if (this.userloginForm.valid) {
       this.logins = {
-        name: this.loginForm.get('name')?.value,
-        password: this.loginForm.get('password')?.value
+        name: this.userloginForm.get('name')?.value,
+        password: this.userloginForm.get('password')?.value
       };
 
-      this.signupservice.login(this.logins).subscribe((res) => {
+      this.signupservice.userlogin(this.logins).subscribe((res) => {
         console.log(res);
         if (res != null) {
           localStorage.setItem('user', JSON.stringify(res));
-          this.router.navigate(['/view']);
+          this.router.navigate(['/apply']);
 
           // Reset the form after successful login
           this.click();
@@ -54,6 +54,7 @@ export class LoginComponent {
   }
 
   click() {
-    this.loginForm.reset();
+    this.userloginForm.reset();
   }
+
 }

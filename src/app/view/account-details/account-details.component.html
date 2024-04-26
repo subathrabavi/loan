@@ -20,13 +20,13 @@
     <input type="number" id="withdrawAmount" [(ngModel)]="withdrawAmount" />
     <button (click)="withdraw()" class="btn btn-danger">Withdraw</button>
   </div >
-<div class="customer-details-section">
+
+  
+<div class="customer-details-section" *ngIf="accountDetails">
       <h3>Details for Account Number {{ accountDetails.accountNumber }}</h3>
       <p>Account Type: {{ accountDetails.accountType }}</p>
       <p>Balance: {{ accountDetails.balance }}</p>
-
-
-    <p >ID : {{accountDetails.id}}</p>
+    <!-- <p >ID : {{accountDetails.id}}</p> -->
     <p>PREFIX : {{accountDetails.prefix}}</p>
     <p>FIRSTNAME : {{accountDetails.firstname}}</p>
     <p>LASTNAME : {{accountDetails.lastname}}</p>
@@ -44,7 +44,10 @@
     <p>COUNTRY : {{accountDetails.country}}</p>
     <p>EDUCATION LEVEL : {{accountDetails.educationLevel}}</p>
     <p>FORM OF IDENTIFICATION : {{accountDetails.formofIdentification}}</p>
+
+    
     <!-- <p>IMAGE : <img src="{{accountDetails.uploadId}}" alt=""></p> -->
+
     <p>AC/TYPE : {{accountDetails.accountType}}</p>
     <P>AC/CATEGORY : {{accountDetails.accountCategory}}</P>
     <P>MONTHLY SALARY : {{accountDetails.monthlySalary}}</P>
@@ -59,6 +62,5 @@
     </div>
 </ng-template>
 
-      
-  </div>
+</div>
   

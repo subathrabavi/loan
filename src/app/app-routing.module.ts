@@ -8,6 +8,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 import { LoginComponent } from './login/login.component';
+import { CalcComponent } from './calc/calc.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 const routes: Routes = [
  
@@ -19,9 +21,12 @@ const routes: Routes = [
   {path:"about",component:AboutComponent},
   {path:'blog',component:BlogComponent},
   {path:'contact',component:ContactComponent},
+  {path:'calculator',component:CalcComponent},
   {path:"blogdetail",component:BlogdetailComponent},
 {path:"view",loadChildren:()=>import("./view/view.module").then(vm=>vm.ViewModule)},
 {path:"login",component:LoginComponent},
+{path:"userlogin",component:UserLoginComponent}
+
 
 
 ];

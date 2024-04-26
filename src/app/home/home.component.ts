@@ -10,7 +10,8 @@ export class HomeComponent {
   constructor(private route:Router){}
 
 apply() {
-this.route.navigate(['apply'])
+this.route.navigate(['userlogin'])
 }
+
 
 }

@@ -17,6 +17,11 @@
 	</form>
 </div>
 </div> -->
+
+
+
+
+<!-- 
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -47,4 +52,29 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<body>
+    <div class="contact-form">
+        <img src="/assets/avatar.jpg" class="avatar">
+        <h2>Login Form</h2>
+        <form [formGroup]="loginForm" (submit)="login($event)">
+            <div>
+                <input type="text" class="form-control" formControlName="name" name="name"
+                    placeholder="Enter Your Name">
+                <div *ngIf="loginForm.get('name')?.touched && loginForm.get('name')?.hasError('required')"
+                    class="text-danger"> * Name is required</div>
+            </div>
+            <div>
+                <input type="password" class="form-control" formControlName="password" name="password"
+                    placeholder="Enter Your Password">
+                <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required')"
+                    class="text-danger"> * Password is required</div>
+            </div>
+            <div class="btn-area">
+                <button type="submit" class="btn2">LOGIN</button>
+            </div>
+            <p style="color: antiquewhite; text-align: center;">For Office Use Only. Admins only login.</p>
+        </form>
+    </div>
+</body>
